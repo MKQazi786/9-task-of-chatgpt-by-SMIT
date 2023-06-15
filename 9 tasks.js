@@ -45,6 +45,14 @@ window.capitalizedEachFirstLetter = (event) => {
 
     let userinput4 = document.getElementById("task 4").value;
 
-   
-    document.getElementById("result4").innerHTML = `your <b>'${userinput4}'</b> after each letter capitalized is become this <b>'${result4}'</b>`;
+    let a = userinput4.split(' ')
+
+    let result4 = []
+    for (let i = 0 ; i < a.length; i++){
+        result4.push(a[i].charAt(0).toUpperCase() + a[i].slice(1));
+    }
+    
+    
+
+    document.getElementById("result4").innerHTML = `your <b>'${userinput4}'</b> after each letter capitalized is become this <b>'${result4.join(' ')}'</b>`;
 }
