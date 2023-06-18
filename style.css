@@ -1,0 +1,65 @@
+* {
+    font-family: 'Lobster', cursive;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+}
+
+body {
+    background-image: url(./9\ task\ tiles.jpg);
+    margin: 0rem;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+
+}
+
+.header {
+    background-color: black;
+    color: rgb(184, 114, 114);
+    padding: 0.5rem;
+    /* width:100%; */
+}
+
+.tasks {
+    border: 2px dashed white;
+    margin: 0.4rem;
+    background-color: rgb(36, 28, 28);
+    color: rgb(203, 121, 121);
+    padding: 1.4rem;
+    font-size: larger;
+}
+
+b {
+    color: white;
+}
+
+.resultField {
+    border-radius: 2rem;
+    padding: 0.7rem;
+    margin: 1rem;
+    border: 1px solid white;
+    background-color: rgb(44, 37, 37);
+    font-size: 1.2rem;
+    overflow-wrap: anywhere;
+
+}
+
+button {
+    background-color: rgb(205, 205, 22);
+    border-radius: 1rem;
+    padding: 0.5rem;
+    font-size: medium;
+}
+
+.inputField {
+    font-size: 1.2rem;
+    margin: 0.5rem;
+    padding: 0.3rem;
+    text-align: center;
+    width: 94%;
+    border-radius: 0.5rem;
+}
+
+.header a{
+    color:rgb(203, 121, 121);
+}

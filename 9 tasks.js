@@ -124,7 +124,7 @@ window.ascendingString = (event) => {
     let userinput7 = document.getElementById("task 7").value;
 
     let result7 = userinput7.toString().split(",").sort().join(', ');
-
+    
     console.log("Task 7:", result7)
 
     document.getElementById("result7").innerHTML = `In this your <b>'${userinput7}'</b> after ascending in alphabetical order become this <b>'${result7}'</b>`;
@@ -132,11 +132,11 @@ window.ascendingString = (event) => {
 
 window.primeNumber = (event) => {
     event.preventDefault();
-
+    
     let userinput8 = parseInt(document.getElementById("task 8").value);
-
+    
     let result8;
-
+    
     if (userinput8 < 2) {
         result8 = `your <b>'${userinput8}'</b> is not a <b>prime number</b>`
         
@@ -153,6 +153,18 @@ window.primeNumber = (event) => {
     }
 
     console.log("Task 8:",result8)
-
+    
     document.getElementById("result8").innerHTML = result8 
+}
+
+window.sortedArrayObject = (event) => {
+    event.preventDefault();
+    
+    let userinput9 = document.getElementById("task 9").value;
+
+    let sorted = userinput9.toString().split(",").sort().join(', ')
+    
+    console.log("Task 9:",sorted)
+    
+    document.getElementById("result9").innerHTML =  result9
 }

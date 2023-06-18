@@ -5,14 +5,19 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>9 Task of chatGPT</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
+    <header class="header" >
+        <h1>9 Task of <b>chatGPT</b> given by <b>sir inzamam malik</b></h1>
+    </header>
 
-    <h1>9 Task of chatGPT given by sir inzamam malik</h1>
-
-    <div class="task 1">
-        <h2>Task no 1:</h2>
+    <div class="tasks">
+        <h2> Task <b>no 1</b>:</h2>
 
         <p>
             Write a function that takes in a number from an input element
@@ -22,18 +27,18 @@
         <form>
 
             <label for="task 1">Enter your Number:</label> <br>
-            <input type="number" id="task 1" placeholder="Enter your number">
+            <input type="number" id="task 1" class="inputField" placeholder="Enter your number">
 
-            <div id="result1"></div>
+            <div class="resultField" id="result1"></div>
 
             <button type="submit" onclick="Factorial(event)">Submit</button>
 
-        </form>
+        </for bm>
 
     </div>
 
-    <div class="task 2">
-        <h2>Task no 2:</h2>
+    <div class="tasks">
+        <h2> Task <b> no 2</b>:</h2>
 
         <p>
             Write a function that takes in a string from an input element and
@@ -44,198 +49,181 @@
         <form>
 
             <label for="task 2">Enter a sentence or Name or Text:</label> <br>
-            <input type="text" id="task 2" placeholder="Enter some text">
+            <input type="text" id="task 2" class="inputField" placeholder="Enter some text">
 
-            <div id="result2"></div>
+            <div class="resultField" id="result2"></div>
 
             <button type="submit" onclick="vowelsRemoving(event)">Submit</button>
 
-        </form>
+        </fo brm>
     </div>
-    
-    <div class="task 3">
-        <h2>Task no 3:</h2>
+
+    <div class="tasks">
+        <h2> Task <b> no 3</b>:</h2>
 
         <p>
-            Write a function that takes in an array of numbers from an input 
-            element and displays the largest number in the array in an output 
+            Write a function that takes in an array of numbers from an input
+            element and displays the largest number in the array in an output
             element.
         </p>
 
         <form>
 
             <label for="task 3">Enter some numbers:</label> <br>
-            <input type="text" id="task 3" placeholder="Enter some number with ,">
+            <input type="text" id="task 3" class="inputField" placeholder="Enter some number with ,">
 
-            <div id="result3"></div>
+            <div class="resultField" id="result3"></div>
 
             <button type="submit" onclick="largestNumberOnTop(event)">Submit</button>
 
-        </form>
+        </fo brm>
     </div>
 
-    <div class="task 4">
-        <h2>Task no 4:</h2>
-        
+    <div class="tasks">
+        <h2> Task <b> no 4</b>:</h2>
+
         <p>
-            Write a function that takes in a string from an input element 
-            and displays the same string with the first letter of every 
+            Write a function that takes in a string from an input element
+            and displays the same string with the first letter of every
             word capitalized in an output element.
         </p>
-        
+
         <form>
-            
+
             <label for="task 4">Enter a sentence or Name or Text:</label> <br>
-            <input type="text" id="task 4" placeholder="Enter some Text">
-            
-            <div id="result4"></div>
+            <input type="text" id="task 4" class="inputField" placeholder="Enter some Text">
+
+            <div class="resultField" id="result4"></div>
 
             <button type="submit" onclick="capitalizedEachFirstLetter(event)">Submit</button>
 
         </form>
     </div>
-    
-    <div class="task 5">
-        <h2>Task no 5:</h2>
-        
+
+    <div class="tasks">
+        <h2> Task <b> no 5</b>:</h2>
+
         <p>
             Write a function that takes in an array of numbers from an input
-            element and displays the average of those numbers in an output 
+            element and displays the average of those numbers in an output
             element.
         </p>
-        
+
         <form>
-            
+
             <label for="task 5">Enter some numbers:</label> <br>
-            <input type="text" id="task 5" placeholder="Enter some No with ,">
-            
-            <div id="result5"></div>
+            <input type="text" id="task 5" class="inputField" placeholder="Enter some No with ,">
+
+            <div class="resultField" id="result5"></div>
 
             <button type="submit" onclick="calculateAverage(event)">Submit</button>
 
         </form>
     </div>
-    
-    <div class="task 6">
-        <h2>Task no 6:</h2>
-        
+
+    <div class="tasks">
+        <h2> Task <b> no 6</b>:</h2>
+
         <p>
-            Write a function that takes in a string from an input element 
-            and displays true if the string is a palindrome and false if 
+            Write a function that takes in a string from an input element
+            and displays true if the string is a palindrome and false if
             it is not in an output element.
         </p>
-        
+
         <form>
-            
+
             <label for="task 6">Enter a text:</label> <br>
-            <input type="text" id="task 6" placeholder="Enter a text like palindrome.">
-            
-            <div id="result6"></div>
+            <input type="text" id="task 6" class="inputField" placeholder="Enter a text like palindrome.">
+
+            <div class="resultField" id="result6"></div>
 
             <button type="submit" onclick="palindromeString(event)">Submit</button>
 
         </form>
     </div>
-    
-    <div class="task 7">
-        <h2>Task no 7:</h2>
-        
+
+    <div class="tasks">
+        <h2> Task <b> no 7</b>:</h2>
+
         <p>
-            Write a function that takes in an array of strings from an input 
-            element and displays a new array with all the strings sorted 
+            Write a function that takes in an array of strings from an input
+            element and displays a new array with all the strings sorted
             in alphabetical order in an output element.
         </p>
-        
-        <form>
-            
-            <label for="task 7">Enter some text:</label> <br>
-            <input type="text" id="task 7" placeholder="Enter some text by,">
-            
-            <div id="result7"></div>
 
+        <form>
+
+            <label for="task 7">Enter some text:</label> <br>
+            <input type="text" id="task 7" class="inputField" placeholder="Enter some text by,">
+            
             <button type="submit" onclick="ascendingString(event)">Submit</button>
 
-        </form>
-    </div>
-    
-    <div class="task 8">
-        <h2>Task no 8:</h2>
-        
-        <p>
-            Write a function that takes in a number from an input element 
-            and displays true if the number is prime and false if it is 
-            not in an output element.
-        </p>
-        
-        <form>
-            <label for="task 8">Enter a number:</label> <br>
-            <input type="number" id="task 8" placeholder="Enter a number">
-            
-            <div id="result8"></div>
+            <div class="resultField" id="result7"></div>
 
-            <button type="submit" onclick="primeNumber(event)">Submit</button>
 
         </form>
     </div>
-    <div class="task 8">
-        <h2>Task no 8:</h2>
-        
+
+
+    <div class="tasks">
+        <h2> Task <b> no 8</b>:</h2>
+
         <p>
-            Write a function that takes in a number from an input element 
-            and displays true if the number is prime and false if it is 
+            Write a function that takes in a number from an input element
+            and displays true if the number is prime and false if it is
             not in an output element.
         </p>
-        
+
         <form>
             <label for="task 8">Enter a number:</label> <br>
-            <input type="number" id="task 8" placeholder="Enter a number">
-            
-            <div id="result8"></div>
+            <input type="number" id="task 8" class="inputField" placeholder="Enter a number">
 
-            <button type="submit" onclick="primeNumber(event)">Submit</button>
-
-        </form>
-    </div>
-    <div class="task 8">
-        <h2>Task no 8:</h2>
-        
-        <p>
-            Write a function that takes in a number from an input element 
-            and displays true if the number is prime and false if it is 
-            not in an output element.
-        </p>
-        
-        <form>
-            <label for="task 8">Enter a number:</label> <br>
-            <input type="number" id="task 8" placeholder="Enter a number">
-            
-            <div id="result8"></div>
+            <div class="resultField" id="result8"></div>
 
             <button type="submit" onclick="primeNumber(event)">Submit</button>
 
         </form>
     </div>
 
-    <div class="task 9">
-        <h2>Task no 9:</h2>
-        
+
+    <div class="tasks">
+        <h2> Task <b> no 9</b>:</h2>
+
         <p>
             Write a function that takes in an array of objects from an input
-            element and displays a new array with all the objects sorted by 
+            element and displays a new array with all the objects sorted by
             a given property in an output element.
         </p>
-        
-        <form>
-            <label for="task 9">Enter a number:</label> <br>
-            <input type="number" id="task 9" placeholder="Enter a number">
-            
-            <div id="result9"></div>
 
-            <button type="submit" onclick="(event)">Submit</button>
+        <form>
+            <label for="task 9">Enter some text or number:</label> <br>
+            
+            <select id="objectProperty" class="inputField">
+                <option value="nameAsc">sorted by name in ascending order</option>
+                <option value="nameDesc">sorted by name in descending order</option>
+                <option value="numberAsc">sorted by number in ascending order</option>
+                <option value="numberDesc">sorted by number in descending order</option>
+                <option value="totalNoString">number of string</option>
+            </select>
+            
+            <input type="text" id="task 9" class="inputField" placeholder="Enter some text or number">
+
+            <div class="resultField" id="result9"></div>
+
+            <button type="submit" onclick="sortedArrayObject(event)">Submit</button>
 
         </form>
     </div>
+
+    <footer class="header" >
+       <b>&copy;</b>  Web and App Developer <b>:</b> 
+        <b>
+            <br> Muhammad Khubaib
+        </b>
+          <br> <a href="https://www.gituhb.com/MKQazi786">Github</a>
+    </footer>
 
     <script type="module" src="9 tasks.js"></script>
 </body>
+
 </html>
