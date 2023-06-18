@@ -124,7 +124,7 @@ window.ascendingString = (event) => {
     let userinput7 = document.getElementById("task 7").value;
 
     let result7 = userinput7.toString().split(",").sort().join(', ');
-    
+
     console.log("Task 7:", result7)
 
     document.getElementById("result7").innerHTML = `In this your <b>'${userinput7}'</b> after ascending in alphabetical order become this <b>'${result7}'</b>`;
@@ -132,17 +132,17 @@ window.ascendingString = (event) => {
 
 window.primeNumber = (event) => {
     event.preventDefault();
-    
+
     let userinput8 = parseInt(document.getElementById("task 8").value);
-    
+
     let result8;
-    
+
     if (userinput8 < 2) {
         result8 = `your <b>'${userinput8}'</b> is not a <b>prime number</b>`
-        
+
     } else {
         result8 = `your <b>'${userinput8}'</b> is a <b>prime number</b>`
-        
+
         for (let i = 2; i <= Math.sqrt(userinput8); i++) {
             if (userinput8 % i === 0) {
                 result8 = `your <b>'${userinput8}'</b> is not a <b>prime number</b>`
@@ -152,19 +152,43 @@ window.primeNumber = (event) => {
         }
     }
 
-    console.log("Task 8:",result8)
-    
-    document.getElementById("result8").innerHTML = result8 
+    console.log("Task 8:", result8)
+
+    document.getElementById("result8").innerHTML = result8
 }
 
 window.sortedArrayObject = (event) => {
     event.preventDefault();
-    
-    let userinput9 = document.getElementById("task 9").value;
 
-    let sorted = userinput9.toString().split(",").sort().join(', ')
-    
-    console.log("Task 9:",sorted)
-    
-    document.getElementById("result9").innerHTML =  result9
+    let userinput9 = document.getElementById("task 9").value;
+    let userinput9check = document.getElementById("objectProperty").value
+
+    let result9;
+    if (userinput9check === "nameAsc") {
+
+        result9 = userinput9.toString().split(",").sort().join(', ');
+    }
+    else if (userinput9check === "nameDesc") {
+
+        result9 = userinput9.toLowerCase().split(",").sort().reverse();
+    }
+    else if (userinput9check === "numberAsc") {
+        result9 = userinput9.split(',')
+        result9 = result9.sort((a ,b) =>parseInt(a) - parseInt(b));
+    }
+    else if(userinput9check === "numberDesc"){
+        result9 = userinput9.split(',')
+        result9 = result9.sort((a ,b) =>parseInt(a) - parseInt(b));
+        result9 = result9.reverse()
+    }
+    else if(userinput9check === "totalNumberString"){
+        result9 = userinput9.value.split(",")
+        result9 = result9.length;git 
+    }
+
+
+
+    console.log("Task 9:",result9)
+
+    document.getElementById("result9").innerHTML = result9
 }
