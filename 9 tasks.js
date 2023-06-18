@@ -167,26 +167,30 @@ window.sortedArrayObject = (event) => {
     if (userinput9check === "nameAsc") {
 
         result9 = userinput9.toString().split(",").sort().join(', ');
+        result9 = `your <b>'${userinput9}'</b>  after ascending is <b>'${result9}'</b> ` 
     }
     else if (userinput9check === "nameDesc") {
 
         result9 = userinput9.toLowerCase().split(",").sort().reverse();
+        result9 = `your <b>'${userinput9}'</b>  after descending is <b>'${result9}'</b> ` 
     }
     else if (userinput9check === "numberAsc") {
         result9 = userinput9.split(',')
         result9 = result9.sort((a ,b) =>parseInt(a) - parseInt(b));
+        result9 = `your <b>'${userinput9}'</b>  after ascending is <b>'${result9}'</b> ` 
     }
     else if(userinput9check === "numberDesc"){
         result9 = userinput9.split(',')
         result9 = result9.sort((a ,b) =>parseInt(a) - parseInt(b));
         result9 = result9.reverse()
+        result9 = `your <b>'${userinput9}'</b>  after descending is <b>'${result9}'</b> ` 
     }
+
     else if(userinput9check === "totalNumberString"){
-        result9 = userinput9.value.split(",")
-        result9 = result9.length;git 
+        a = userinput9.value.split(",");
+        totalLength = a.length;
+        result9 = `your <b>'${userinput9check}'</b>  after counting your total string is <b>${totalLength}</b>` 
     }
-
-
 
     console.log("Task 9:",result9)
 
