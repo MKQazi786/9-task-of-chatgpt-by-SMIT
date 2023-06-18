@@ -164,6 +164,7 @@ window.sortedArrayObject = (event) => {
     let userinput9check = document.getElementById("objectProperty").value
 
     let result9;
+
     if (userinput9check === "nameAsc") {
 
         result9 = userinput9.toString().split(",").sort().join(', ');
@@ -186,10 +187,10 @@ window.sortedArrayObject = (event) => {
         result9 = `your <b>'${userinput9}'</b>  after descending is <b>'${result9}'</b> ` 
     }
 
-    else if(userinput9check === "totalNumberString"){
-        a = userinput9.value.split(",");
-        totalLength = a.length;
-        result9 = `your <b>'${userinput9check}'</b>  after counting your total string is <b>${totalLength}</b>` 
+    else if(userinput9check === "totalNoString"){
+       let a = userinput9.split(",");
+       let totalLength = a.length;
+       result9 = `your <b>'${userinput9}'</b> after counting your total string is <b>"${totalLength}"</b>` 
     }
 
     console.log("Task 9:",result9)
