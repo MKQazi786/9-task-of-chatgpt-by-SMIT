@@ -12,7 +12,7 @@ window.Factorial = (event) => {
 
     console.log("Task 1:", result)
 
-    document.getElementById("result1").innerHTML = `The Factorial Of <b>'${userinput1}'</b> is <b>'${result}'</b>`;
+    document.getElementById("result1").innerHTML = `The Factorial Of <b>'${userinput1}'</b> is <b>'${result}'</b>.`;
 }
 
 window.vowelsRemoving = (event) => {
@@ -26,7 +26,7 @@ window.vowelsRemoving = (event) => {
 
     console.log("Task 2: ", result2)
 
-    document.getElementById("result2").innerHTML = `your <b>'${userinput2}'</b> after removing of vowels is become this <b>'${result2}'</b>`;
+    document.getElementById("result2").innerHTML = `your <b>'${userinput2}'</b> after removing of vowels is become this <b>'${result2}'</b>.`;
 }
 
 window.largestNumberOnTop = (event) => {
@@ -40,7 +40,7 @@ window.largestNumberOnTop = (event) => {
 
     console.log("Task 3: ", result3)
 
-    document.getElementById("result3").innerHTML = `In this your numbers <b>'${userinput3}'</b> after extracting the largest number is <b>'${result3}'</b>`;
+    document.getElementById("result3").innerHTML = `In this your numbers <b>'${userinput3}'</b> after extracting the largest number is <b>'${result3}'</b>.`;
 }
 
 window.capitalizedEachFirstLetter = (event) => {
@@ -58,7 +58,7 @@ window.capitalizedEachFirstLetter = (event) => {
 
     console.log("Task 4: ", result4.join(' '));
 
-    document.getElementById("result4").innerHTML = `your <b>'${userinput4}'</b> after each letter capitalized is become this <b>'${result4.join(' ')}'</b>`;
+    document.getElementById("result4").innerHTML = `your <b>'${userinput4}'</b> after each letter capitalized is become this <b>'${result4.join(' ')}'</b>.`;
 }
 
 window.calculateAverage = (event) => {
@@ -74,7 +74,7 @@ window.calculateAverage = (event) => {
 
     console.log("Task 5:", result5)
 
-    document.getElementById("result5").innerHTML = `In this your <b>'${userinput5}'</b> after calculating average then become this <b>'${result5}'</b>`;
+    document.getElementById("result5").innerHTML = `In this your <b>'${userinput5}'</b> after calculating average then become this <b>'${result5}'</b>.`;
 }
 
 window.palindromeString = (event) => {
@@ -88,29 +88,9 @@ window.palindromeString = (event) => {
 
     let result6;
     if (a === b) {
-        result6 = `your '<b>${userinput6}</b>' is a palindrom`
+        result6 = `your '<b>${userinput6}</b>' is a palindrom.`
     } else {
-        result6 = `your '<b>${userinput6}</b>' is not a palindrom`
-    }
-
-    console.log("Task 6:", result6)
-
-    document.getElementById("result6").innerHTML = result6;
-}
-window.palindromeString = (event) => {
-    event.preventDefault();
-
-    let userinput6 = document.getElementById("task 6").value;
-
-    let a = userinput6.toString().toLowerCase();
-
-    let b = a.split("").reverse().join('')
-
-    let result6;
-    if (a === b) {
-        result6 = `your '<b>${userinput6}</b>' is a palindrom`
-    } else {
-        result6 = `your '<b>${userinput6}</b>' is not a palindrom`
+        result6 = `your '<b>${userinput6}</b>' is not a palindrom.`
     }
 
     console.log("Task 6:", result6)
@@ -127,7 +107,7 @@ window.ascendingString = (event) => {
 
     console.log("Task 7:", result7)
 
-    document.getElementById("result7").innerHTML = `In this your <b>'${userinput7}'</b> after ascending in alphabetical order become this <b>'${result7}'</b>`;
+    document.getElementById("result7").innerHTML = `In this your <b>'${userinput7}'</b> after ascending in alphabetical order become this <b>'${result7}'</b>.`;
 }
 
 window.primeNumber = (event) => {
@@ -138,14 +118,14 @@ window.primeNumber = (event) => {
     let result8;
 
     if (userinput8 < 2) {
-        result8 = `your <b>'${userinput8}'</b> is not a <b>prime number</b>`
+        result8 = `your <b>'${userinput8}'</b> is not a <b>prime number</b>.`
 
     } else {
-        result8 = `your <b>'${userinput8}'</b> is a <b>prime number</b>`
+        result8 = `your <b>'${userinput8}'</b> is a <b>prime number</b>.`
 
         for (let i = 2; i <= Math.sqrt(userinput8); i++) {
             if (userinput8 % i === 0) {
-                result8 = `your <b>'${userinput8}'</b> is not a <b>prime number</b>`
+                result8 = `your <b>'${userinput8}'</b> is not a <b>prime number</b>.`
                 break;
             }
 
@@ -167,30 +147,30 @@ window.sortedArrayObject = (event) => {
 
     if (userinput9check === "nameAsc") {
 
-        result9 = userinput9.toString().split(",").sort().join(', ');
-        result9 = `your <b>'${userinput9}'</b>  after ascending is <b>'${result9}'</b> ` 
+        result9 = userinput9.toLowerCase().toString().split(",").sort().join(', ');
+        result9 = `your <b>'${userinput9}'</b>  after ascending is <b>'${result9}'</b>. ` 
     }
     else if (userinput9check === "nameDesc") {
 
         result9 = userinput9.toLowerCase().split(",").sort().reverse();
-        result9 = `your <b>'${userinput9}'</b>  after descending is <b>'${result9}'</b> ` 
+        result9 = `your <b>'${userinput9}'</b>  after descending is <b>'${result9}'</b>. ` 
     }
     else if (userinput9check === "numberAsc") {
         result9 = userinput9.split(',')
         result9 = result9.sort((a ,b) =>parseInt(a) - parseInt(b));
-        result9 = `your <b>'${userinput9}'</b>  after ascending is <b>'${result9}'</b> ` 
+        result9 = `your <b>'${userinput9}'</b>  after ascending is <b>'${result9}'</b>. ` 
     }
     else if(userinput9check === "numberDesc"){
         result9 = userinput9.split(',')
         result9 = result9.sort((a ,b) =>parseInt(a) - parseInt(b));
         result9 = result9.reverse()
-        result9 = `your <b>'${userinput9}'</b>  after descending is <b>'${result9}'</b> ` 
+        result9 = `your <b>'${userinput9}'</b>  after descending is <b>'${result9}'</b>. ` 
     }
 
     else if(userinput9check === "totalNoString"){
        let a = userinput9.split(",");
        let totalLength = a.length;
-       result9 = `your <b>'${userinput9}'</b> after counting your total string is <b>"${totalLength}"</b>` 
+       result9 = `your <b>'${userinput9}'</b> after counting your total string is <b>" ${totalLength}. "</b>` 
     }
 
     console.log("Task 9:",result9)
